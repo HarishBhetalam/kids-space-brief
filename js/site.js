@@ -45,100 +45,57 @@ function sortedItems(issue) {
   return items.sort((a, b) => (a.rank || 99) - (b.rank || 99));
 }
 
-function renderPiece(item, total, heading) {
-  const weight = weightFor(item.rank || total, total);
-  const title = escapeHtml(item.title);
+const FILTERS = [["all", "All"], ...CATEGORIES.map(([id, name]) => [id, name.replace(" and ", " & ")])];
+
+function renderPiece(item) {
+  const weight = weightFor(item.rank || 99, 99);
   const href = escapeHtml(item.url);
-  const Tag = heading;
   return `
-    <article class="piece" data-weight="${weight}" id="piece-${escapeHtml(item.rank)}" data-category="${escapeHtml(item.category)}">
-      <p class="rank">${escapeHtml(item.rank)}</p>
-      <div>
-        <p class="kicker">${escapeHtml(CATEGORY_NAME[item.category] || item.category)}</p>
-        <${Tag}><a href="${href}">${title}</a></${Tag}>
-        <p class="meta">${escapeHtml(item.source)} · ${escapeHtml(formatDay(item.date))}</p>
-        <p class="summary">${escapeHtml(item.summary)}</p>
-        <a class="read" href="${href}">Read the piece</a>
-      </div>
+    <article class="piece" data-weight="${weight}">
+      <p class="kicker"><span class="rank">${escapeHtml(item.rank)}</span>${escapeHtml(CATEGORY_NAME[item.category] || item.category)}</p>
+      <h2><a href="${href}">${escapeHtml(item.title)}</a></h2>
+      <p class="meta">${escapeHtml(item.source)} · ${escapeHtml(formatDay(item.date))}</p>
+      <p class="summary">${escapeHtml(item.summary)}</p>
+      <a class="read" href="${href}">Read the piece</a>
     </article>
   `;
 }
 
-function renderImportance(issue) {
-  const items = sortedItems(issue);
-  const total = items.length;
-  const present = new Set(items.map((item) => item.category));
-  const pieces = items.map((item) => renderPiece(item, total, "h2")).join("");
-  const quiet = CATEGORIES.filter(([id]) => !present.has(id))
-    .map(
-      ([id, name]) => `
-        <section class="section-block" id="section-${id}">
-          <h2>${escapeHtml(name)}</h2>
-          <p class="empty">No articles this week.</p>
-        </section>
-      `
-    )
-    .join("");
-  return `${pieces}${quiet}`;
-}
-
-function renderSections(issue) {
-  const items = sortedItems(issue);
-  const total = items.length;
-  return CATEGORIES.map(([id, name]) => {
-    const group = items.filter((item) => item.category === id);
-    const body = group.length
-      ? group.map((item) => renderPiece(item, total, "h3")).join("")
-      : `<p class="empty">No articles this week.</p>`;
-    return `
-      <section class="section-block" id="section-${id}">
-        <h2>${escapeHtml(name)}</h2>
-        ${body}
-      </section>
-    `;
-  }).join("");
+function renderPieces(items) {
+  if (!items.length) return `<p class="empty">No articles this week.</p>`;
+  return `<div class="pieces">${items.map(renderPiece).join("")}</div>`;
 }
 
 function renderIssue(issue) {
   const items = sortedItems(issue);
-  const firstByCategory = {};
-  for (const item of items) {
-    if (!firstByCategory[item.category]) firstByCategory[item.category] = item.rank;
-  }
-  const jumps = CATEGORIES.map(([id, name]) => {
-    const rank = firstByCategory[id];
-    const href = rank ? `#piece-${rank}` : `#section-${id}`;
-    return `<a href="${href}">${escapeHtml(name)}</a>`;
-  }).join("");
+  const filters = FILTERS.map(
+    ([id, name], index) =>
+      `<button type="button" data-filter="${escapeHtml(id)}" aria-pressed="${index === 0 ? "true" : "false"}">${escapeHtml(name)}</button>`
+  ).join("");
 
   return `
-    <p class="kicker">${escapeHtml(issue.range || formatDay(issue.id))}</p>
-    <h1>${escapeHtml(issue.title || "This week")}</h1>
-    ${issue.intro ? `<p class="issue-intro">${escapeHtml(issue.intro)}</p>` : ""}
-    <div class="mode" role="group" aria-label="Reading order">
-      <button type="button" data-mode="importance" aria-pressed="true">Important first</button>
-      <button type="button" data-mode="sections" aria-pressed="false">By section</button>
+    <div class="issue-head">
+      <p class="kicker">${escapeHtml(issue.range || formatDay(issue.id))}</p>
+      <h1>${escapeHtml(issue.title || "This week")}</h1>
+      ${issue.intro ? `<p class="issue-intro">${escapeHtml(issue.intro)}</p>` : ""}
     </div>
-    <nav class="jump" aria-label="Sections">${jumps}</nav>
-    <p class="order-note" data-order-note>Most important first. Each summary is short enough to read in place.</p>
-    <div data-issue-body>${renderImportance(issue)}</div>
+    <div class="filters" role="group" aria-label="Filter articles">${filters}</div>
+    <div data-issue-body>${renderPieces(items)}</div>
   `;
 }
 
-function bindMode(root, issue) {
+function bindFilters(root, issue) {
+  const items = sortedItems(issue);
   const body = root.querySelector("[data-issue-body]");
-  const note = root.querySelector("[data-order-note]");
-  const buttons = root.querySelectorAll("[data-mode]");
+  const buttons = root.querySelectorAll("[data-filter]");
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      const mode = button.dataset.mode;
+      const filter = button.dataset.filter;
       buttons.forEach((other) => {
         other.setAttribute("aria-pressed", other === button ? "true" : "false");
       });
-      body.innerHTML = mode === "sections" ? renderSections(issue) : renderImportance(issue);
-      note.textContent = mode === "sections"
-        ? "Same pieces, grouped. A quiet section still stays on the page."
-        : "Most important first. Each summary is short enough to read in place.";
+      const visible = filter === "all" ? items : items.filter((item) => item.category === filter);
+      body.innerHTML = renderPieces(visible);
     });
   });
 }
@@ -199,7 +156,7 @@ async function start() {
   }
 
   root.innerHTML = renderIssue(issue);
-  bindMode(root, issue);
+  bindFilters(root, issue);
   if (page === "week") document.title = `${issue.title} · Kids Space Brief`;
 }
 

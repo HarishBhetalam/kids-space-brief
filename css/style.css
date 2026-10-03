@@ -6,7 +6,7 @@
   --bg: #ffffff;
   --soft: #fafaf9;
   --link: #1c1917;
-  --max: 40rem;
+  --max: 72rem;
 }
 
 * { box-sizing: border-box; }
@@ -61,11 +61,17 @@ nav {
   font-size: 0.82rem;
 }
 
-nav a { color: var(--muted); text-decoration: none; }
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid transparent;
+}
 nav a[aria-current="page"],
 nav a:hover { color: var(--ink); }
+nav a[aria-current="page"] { border-bottom-color: var(--ink); }
 
-main { padding: 2.5rem 0 4rem; }
+main { padding: 1.75rem 0 3rem; }
 
 h1 {
   font-size: 2.15rem;
@@ -97,62 +103,59 @@ footer.site,
 .lede,
 .issue-intro {
   color: var(--muted);
-  margin: 0 0 1.25rem;
+  margin: 0;
+  max-width: 42rem;
 }
 
-.mode {
+.issue-head { margin-bottom: 1.1rem; }
+
+.filters {
   display: flex;
-  gap: 0.4rem;
-  margin: 0 0 1.4rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.1rem;
 }
 
-.mode button {
+.filters button {
   appearance: none;
-  border: 0;
-  background: transparent;
-  color: var(--muted);
-  font: inherit;
-  font-size: 0.82rem;
-  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1;
+  min-height: 44px;
+  padding: 0 1rem;
   border-radius: 999px;
   cursor: pointer;
 }
 
-.mode button[aria-pressed="true"] {
-  color: var(--ink);
-  text-decoration: underline;
-  text-underline-offset: 0.25em;
+.filters button[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
 }
 
-.jump {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem 0.9rem;
-  margin: 0 0 0.5rem;
-  font-size: 0.82rem;
-}
-
-.jump a { color: var(--muted); text-decoration: none; }
-.jump a:hover { color: var(--ink); }
-
-.order-note {
-  font-family: ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.82rem;
-  color: var(--faint);
-  margin: 0 0 0.25rem;
+.pieces {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem 1rem;
 }
 
 .piece {
-  display: grid;
-  grid-template-columns: 1.6rem 1fr;
-  gap: 0.35rem 0.85rem;
-  padding: 1.7rem 0 1.85rem;
-  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+  padding: 0.95rem 1rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
 }
 
 .rank {
-  margin: 0.35rem 0 0;
-  font-size: 0.78rem;
+  margin-right: 0.4rem;
+  font-size: 0.72rem;
   color: var(--faint);
 }
 
@@ -169,47 +172,46 @@ footer.site,
 .piece h2 a:hover,
 .piece h3 a:hover { text-decoration: underline; text-underline-offset: 0.14em; }
 
-.piece[data-weight="lead"] h2,
-.piece[data-weight="lead"] h3 { font-size: 1.85rem; }
+.piece[data-weight="lead"] h2 { font-size: 1.45rem; }
 
-.piece[data-weight="high"] h2,
-.piece[data-weight="high"] h3 { font-size: 1.4rem; }
-
-.piece[data-weight="rest"] h2,
-.piece[data-weight="rest"] h3 { font-size: 1.2rem; }
+.piece h2 { font-size: 1.2rem; }
 
 .meta {
-  margin: 0 0 0.7rem;
+  margin: 0 0 0.45rem;
   font-size: 0.8rem;
   color: var(--muted);
 }
 
-.summary { margin: 0; }
+.summary {
+  margin: 0 0 0.85rem;
+  font-size: 1rem;
+  line-height: 1.45;
+}
 
 .read {
-  display: inline-block;
-  margin-top: 0.8rem;
-  font-size: 0.82rem;
-  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 52px;
+  margin-top: auto;
+  padding: 0.85rem 1.1rem;
+  border-radius: 10px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
 }
 
-.section-block { margin-top: 2.2rem; }
-
-.section-block .kicker { display: none; }
-
-.section-block h2 {
-  font-size: 1.35rem;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  margin: 0;
-  padding-top: 0.2rem;
-}
+.read:hover { background: #292524; }
 
 .empty {
   color: var(--muted);
-  margin: 0.45rem 0 0;
-  padding-bottom: 1.2rem;
-  border-bottom: 1px solid var(--line);
+  margin: 0.2rem 0 0;
 }
 
 .archive-list { list-style: none; padding: 0; margin: 1.25rem 0 0; }
@@ -263,9 +265,6 @@ footer.site {
   color: var(--faint);
 }
 
-@media (max-width: 640px) {
-  .piece { grid-template-columns: 1fr; gap: 0.2rem; }
-  .rank { margin: 0; }
-  .piece[data-weight="lead"] h2,
-  .piece[data-weight="lead"] h3 { font-size: 1.6rem; }
+@media (max-width: 800px) {
+  .pieces { grid-template-columns: 1fr; }
 }
