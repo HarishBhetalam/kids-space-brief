@@ -2,6 +2,7 @@ const CATEGORIES = [
   ["new-tech", "New tech"],
   ["parents-teachers", "Parents and teachers"],
   ["school", "School"],
+  ["workshops", "Workshops"],
   ["investments", "Investments"],
   ["research", "Research"],
   ["rules", "Rules and trust"],
@@ -76,22 +77,39 @@ function renderPiece(item, weight) {
   `;
 }
 
+function trailRank(index) {
+  if (index === 0) return "lead";
+  if (index < 3) return "next";
+  return "rest";
+}
+
+function renderTrail(item, index) {
+  const href = escapeHtml(item.url);
+  const category = escapeHtml(CATEGORY_NAME[item.category] || item.category);
+  const title = escapeHtml(item.title);
+  const meta = `${escapeHtml(item.source)} · ${escapeHtml(formatDay(item.date))}`;
+  const summary = escapeHtml(item.summary);
+  const rank = escapeHtml(item.rank);
+  return `
+    <li class="trail-item" data-rank="${trailRank(index)}" data-cat="${escapeHtml(item.category)}">
+      <div class="trail-rail" aria-hidden="true"><span class="rank">${rank}</span></div>
+      <div class="trail-copy">
+        <p class="kicker">${category}</p>
+        <h2><a href="${href}">${title}</a></h2>
+        <p class="meta">${meta}</p>
+        <p class="summary">${summary}</p>
+      </div>
+      <a class="read" href="${href}">Read the piece</a>
+    </li>
+  `;
+}
+
 function renderPieces(items, sequenced) {
   if (!items.length) return `<p class="empty">No articles this week.</p>`;
   if (!sequenced) {
     return `<div class="pieces">${items.map((item) => renderPiece(item, "card")).join("")}</div>`;
   }
-
-  const lead = items[0];
-  const next = items.slice(1, 3);
-  const rest = items.slice(3);
-  return `
-    <div class="sequence">
-      ${renderPiece(lead, "lead")}
-      ${next.length ? `<div class="sequence-next">${next.map((item) => renderPiece(item, "next")).join("")}</div>` : ""}
-      ${rest.length ? `<div class="sequence-rest">${rest.map((item) => renderPiece(item, "rest")).join("")}</div>` : ""}
-    </div>
-  `;
+  return `<ol class="trail">${items.map((item, index) => renderTrail(item, index)).join("")}</ol>`;
 }
 
 function renderIssue(issue) {

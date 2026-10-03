@@ -1,6 +1,6 @@
 # Kids Space Brief
 
-A weekly reading site for kids technology, parents, teachers, school, investment, research, and the rules around them.
+A weekly reading site for kids technology, parents, teachers, school, STEM workshops, investment, research, and the rules around them. The brief stays in the United States: a piece has to be about a U.S. law, school, family, company, or a product sold here.
 
 GitHub Pages serves this folder from the `main` branch. The home page, archive, and week pages read `data/issues.json`. The source list is `sources.html`.
 
@@ -38,6 +38,8 @@ Do not summarize a URL that already appears in `data/issues.json`.
 }
 ```
 
-Section ids, in page order: `new-tech`, `parents-teachers`, `school`, `investments`, `research`, `rules`.
+Section ids, in page order: `new-tech`, `parents-teachers`, `school`, `workshops`, `investments`, `research`, `rules`.
+
+`workshops` is companies that teach children STEM or run classes, camps, and after-school sessions in the United States. A new program, a partnership, or press about the company belongs here. A single class listing does not.
 
 Summaries have to come from pieces that were actually opened. Do not invent articles, dates, or quotes.
