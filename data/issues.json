@@ -1,0 +1,130 @@
+{
+  "issues": [
+    {
+      "id": "2026-10-03",
+      "title": "Week of October 3, 2026",
+      "range": "September 28 – October 3, 2026",
+      "intro": "California narrowed what school software can do with student data. Treasury published the rules for a new federal scholarship tax credit. And a large European teacher survey said AI is already in lesson planning, with little faith that it helps children learn.",
+      "sections": [
+        {
+          "id": "new-tech",
+          "items": [
+            {
+              "rank": 7,
+              "title": "A kids watch with WhatsApp, GPS, and a remote microphone",
+              "url": "https://unboxdailyhq.com/the-neo-fit-kids-smartwatch-arrives-with-standalone-whatsapp/",
+              "source": "Unbox Daily",
+              "date": "2026-09-28",
+              "summary": "Sekyo’s Neo Fit is a cellular kids watch for India, priced at ₹9,990, for primary-school children. It handles calls and WhatsApp, live location and geofences, and it blocks the open web. Parents run it from an app, including a remote microphone that can listen to the room without lighting the screen. The review treats the heart-rate and blood-oxygen claims as unverified fitness estimates, and warns that a weak cell signal will drain the battery before the school day ends."
+            }
+          ]
+        },
+        {
+          "id": "parents-teachers",
+          "items": [
+            {
+              "rank": 4,
+              "title": "A Head Start preschool may have to stop teaching in Spanish",
+              "url": "https://www.the74million.org/zero2eight/this-head-start-center-teaches-in-2-languages-a-trump-rule-would-leave-only-1/",
+              "source": "The 74",
+              "date": "2026-10-01",
+              "summary": "A proposed federal rule would require Head Start programs to conduct education in English, with waivers and an exception for some Tribal languages. About a third of Head Start children speak another language at home. The story follows a Florida preschool that teaches in English and Spanish, and researcher Michael López says there is no credible evidence that English-only instruction produces stronger English results. Public comments are due October 6. The same proposal would drop the requirement that centers serving many non-English speakers hire someone who speaks the children’s language, which the department says may weaken family engagement."
+            }
+          ]
+        },
+        {
+          "id": "school",
+          "items": [
+            {
+              "rank": 2,
+              "title": "Treasury’s rules for the federal scholarship tax credit",
+              "url": "https://www.edweek.org/policy-politics/federal-education-tax-credit-rules-are-finally-here-what-we-know-so-far/2026/10",
+              "source": "Education Week",
+              "date": "2026-10-01",
+              "summary": "The Treasury Department published rules for the federal scholarship tax credit that starts in January. Donors can claim a dollar-for-dollar credit of up to $1,700 for gifts to scholarship groups. Those groups can cover private-school tuition, some home-school costs, and certain expenses for public-school students. A child can receive a scholarship only if their governor opts the state in. Education Week counts 31 states that have opted in or plan to. Children from low-income families who are already in public-benefit or school-tutoring programs are automatically eligible. States have until January 1, 2027 to opt in for next year."
+            },
+            {
+              "rank": 3,
+              "title": "Public schools try to claim the tax credit for their own students",
+              "url": "https://www.chalkbeat.org/2026/09/30/how-school-choice-federal-tax-credits-could-help-students-in-public-schools/",
+              "source": "Chalkbeat",
+              "date": "2026-09-30",
+              "summary": "Districts, charters, and school foundations are building scholarship groups so the same tax credit can pay for tutoring, after-school programs, test prep, and activities public schools have cut. Denver’s public-school foundation and a new organization, Future School Fund, are among them. Jon Valant at Brookings argues the money will still flow mainly to private-school families and, inside public schools, to better-off ones. Treasury’s rules, noted in an update to the story, still leave open questions about what the money can buy."
+            },
+            {
+              "rank": 6,
+              "title": "Nordic schools argue over bans, AI tools, and who controls teaching",
+              "url": "https://nordicedtech.substack.com/p/nordic-edtech-news-166-2026-09-28",
+              "source": "Nordic EdTech News",
+              "date": "2026-09-28",
+              "summary": "After weak PISA results, Norway is moving toward national guidelines for reading, writing, and arithmetic, and may restore state approval of teaching materials so unsecured or AI-made materials stay out of classrooms. Danish industry wants safe, age-appropriate AI tools for every pupil from grade 4, a compulsory technology subject, and a national teacher-training push. In Sweden, 48 percent of 15-year-olds use AI chatbots at least weekly, and a third have not been taught how to judge AI-generated information. The newsletter’s author argues that high-performing systems are teaching children to use technology, not only removing it."
+            },
+            {
+              "rank": 8,
+              "title": "French students blockade schools over crowded classes",
+              "url": "https://www.bbc.co.uk/news/articles/c862epne7glyo",
+              "source": "BBC News",
+              "date": "2026-09-29",
+              "summary": "High-school students in France blockaded schools over overcrowded classes and teacher shortages. On Tuesday more than 400 people, mostly minors, were detained, and the education ministry said at least 400 schools were affected. At least 10 teachers and several students were injured, along with 48 police officers. The student protests overlapped a national walkout by teachers and other public workers over pay and working conditions."
+            }
+          ]
+        },
+        {
+          "id": "investments",
+          "items": [
+            {
+              "rank": 9,
+              "title": "Brighteye raises a $72 million first close",
+              "url": "https://nordicedtech.substack.com/p/nordic-edtech-news-166-2026-09-28",
+              "source": "Nordic EdTech News",
+              "date": "2026-09-28",
+              "summary": "Brighteye Ventures announced a $72 million first close of Fund III, which takes the firm to $245 million under management. It is describing the fund as a bet on tools that help people learn, work, and adapt, beyond classic edtech. Eight investments are already made from the fund, including one unnamed company in Denmark."
+            },
+            {
+              "rank": 10,
+              "title": "Minnesota senators go after private equity in autism therapy",
+              "url": "https://www.the74million.org/article/after-74-investigation-minnesota-senators-seek-law-regulating-autism-therapy/",
+              "source": "The 74",
+              "date": "2026-10-01",
+              "summary": "Two Minnesota senators said they will seek laws on private-equity ownership of autism therapy, after a 74 investigation. Medicaid billing for applied behavior analysis grew from about $400 million in 2019 to nearly $2 billion in 2024. Private equity owned almost half of the 50 companies with the highest claims in the records reviewed. The treatment is given to autistic children as young as 2, sometimes for as many as 40 hours a week. The senators want ownership disclosed and a way to remove providers whose profit model hurts care."
+            },
+            {
+              "rank": 11,
+              "title": "Edtech venture is still about $1 billion, and most of it is not for children",
+              "url": "https://iclub.vc/insights/a-requiem-for-edtech.html",
+              "source": "iClub",
+              "date": "2026-09-29",
+              "summary": "This investor note, using PitchBook figures, puts global edtech venture at about $1 billion in the first half of 2026, down 26 percent from a year earlier and far below the $17.3 billion peak in 2021. In the first quarter, more than 70 percent of that money went to corporate learning. Early-childhood deal activity is up. K-12 products built only for remote learning have been hit hardest. The note’s point is that schools and families are still spending on digital learning, while new venture money has become picky and is mostly aimed elsewhere."
+            }
+          ]
+        },
+        {
+          "id": "research",
+          "items": [
+            {
+              "rank": 5,
+              "title": "Teachers are using AI to prep, and few think it helps students learn",
+              "url": "https://nordicedtech.substack.com/p/nordic-edtech-news-166-2026-09-28",
+              "source": "Nordic EdTech News",
+              "date": "2026-09-28",
+              "summary": "Sanoma Learning’s European Teacher Survey, covering more than 20,000 teachers in 14 countries, finds AI already in daily preparation. Sixty-three percent expect to use it to prepare materials, up from 49 percent, and confidence with generative AI rose from 28 percent to 42 percent in a year. Only 16 percent think it will produce better learning. A third endorse student use, and 75 percent are worried about the risks. About 88 percent of current use is general-purpose tools such as ChatGPT, because education-specific AI is still scarce. Teachers in Sweden, Finland, and Norway say AI built for education matters."
+            }
+          ]
+        },
+        {
+          "id": "rules",
+          "items": [
+            {
+              "rank": 1,
+              "title": "California bars school software from training AI on student data",
+              "url": "https://hintzelaw.com/blog/2026/9/30/california-ab-1159-new-student-privacy-ai-training-and-edtech-compliance-requirements",
+              "source": "Hintze Law",
+              "date": "2026-09-30",
+              "summary": "Hintze Law walks through California’s AB 1159, enacted September 10. It widens student-privacy rules for early learning and K-12, covers vendors working for a product, and adds a similar law for higher education. Covered student data cannot be used to train or develop an AI system. Early-learning and K-12 requirements start January 1, 2027. A student or parent can sue after a 60-day chance to fix the problem, generally for at least $500 per person per violation. The firm says the exception for maintaining and improving a service is unclear, which is the line a kids product has to read carefully."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
