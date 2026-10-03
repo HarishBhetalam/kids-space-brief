@@ -42,41 +42,6 @@ function sortedItems(issue) {
 
 const FILTERS = [["all", "All"], ...CATEGORIES.map(([id, name]) => [id, name.replace(" and ", " & ")])];
 
-function renderPiece(item, weight) {
-  const href = escapeHtml(item.url);
-  const category = escapeHtml(CATEGORY_NAME[item.category] || item.category);
-  const title = escapeHtml(item.title);
-  const meta = `${escapeHtml(item.source)} · ${escapeHtml(formatDay(item.date))}`;
-  const summary = escapeHtml(item.summary);
-  const rank = escapeHtml(item.rank);
-  const button = `<a class="read" href="${href}">Read the piece</a>`;
-
-  if (weight === "rest") {
-    return `
-      <article class="piece" data-weight="rest">
-        <p class="rank">${rank}</p>
-        <div class="piece-copy">
-          <p class="kicker">${category}</p>
-          <h2><a href="${href}">${title}</a></h2>
-          <p class="meta">${meta}</p>
-          <p class="summary">${summary}</p>
-        </div>
-        ${button}
-      </article>
-    `;
-  }
-
-  return `
-    <article class="piece" data-weight="${weight}">
-      <p class="kicker"><span class="rank">${rank}</span>${category}</p>
-      <h2><a href="${href}">${title}</a></h2>
-      <p class="meta">${meta}</p>
-      <p class="summary">${summary}</p>
-      ${button}
-    </article>
-  `;
-}
-
 function trailRank(index) {
   if (index === 0) return "lead";
   if (index < 3) return "next";
@@ -104,11 +69,8 @@ function renderTrail(item, index) {
   `;
 }
 
-function renderPieces(items, sequenced) {
+function renderPieces(items) {
   if (!items.length) return `<p class="empty">No articles this week.</p>`;
-  if (!sequenced) {
-    return `<div class="pieces">${items.map((item) => renderPiece(item, "card")).join("")}</div>`;
-  }
   return `<ol class="trail">${items.map((item, index) => renderTrail(item, index)).join("")}</ol>`;
 }
 
@@ -126,7 +88,7 @@ function renderIssue(issue) {
       ${issue.intro ? `<p class="issue-intro">${escapeHtml(issue.intro)}</p>` : ""}
     </div>
     <div class="filters" role="group" aria-label="Filter articles">${filters}</div>
-    <div data-issue-body>${renderPieces(items, true)}</div>
+    <div data-issue-body>${renderPieces(items)}</div>
   `;
 }
 
@@ -141,7 +103,7 @@ function bindFilters(root, issue) {
         other.setAttribute("aria-pressed", other === button ? "true" : "false");
       });
       const visible = filter === "all" ? items : items.filter((item) => item.category === filter);
-      body.innerHTML = renderPieces(visible, filter === "all");
+      body.innerHTML = renderPieces(visible);
     });
   });
 }
