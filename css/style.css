@@ -33,7 +33,7 @@ header.site {
   position: sticky;
   top: 0;
   z-index: 2;
-  background: rgba(255, 255, 255, 0.92);
+  background: #fff;
   border-bottom: 1px solid var(--line);
 }
 
@@ -137,10 +137,91 @@ footer.site,
   color: #fff;
 }
 
-.pieces {
+.pieces,
+.sequence-next {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.85rem 1rem;
+}
+
+.sequence {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.piece[data-weight="lead"] {
+  background: #f6f5f2;
+  padding: 1.35rem 1.5rem 1.4rem;
+}
+
+.piece[data-weight="lead"] h2 { font-size: 2rem; }
+
+.piece[data-weight="lead"] .summary { font-size: 1.0625rem; }
+
+.piece[data-weight="lead"] .read {
+  width: auto;
+  min-width: 15rem;
+  align-self: flex-start;
+  margin-top: 0.25rem;
+}
+
+.piece[data-weight="next"] h2 { font-size: 1.28rem; }
+
+.sequence-rest {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.35rem;
+  border-top: 1px solid var(--line);
+}
+
+.piece[data-weight="rest"] {
+  display: grid;
+  grid-template-columns: 2.25rem minmax(0, 1fr) auto;
+  gap: 0.15rem 1rem;
+  align-items: start;
+  height: auto;
+  padding: 1.05rem 0.15rem 1.15rem;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+}
+
+.piece[data-weight="rest"] .rank {
+  align-self: stretch;
+  position: relative;
+  margin: 0.1rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: var(--ink);
+}
+
+.piece[data-weight="rest"] .rank::after {
+  content: "";
+  position: absolute;
+  left: 0.35rem;
+  top: 1.55rem;
+  bottom: -1.2rem;
+  width: 1px;
+  background: #d6d3d1;
+}
+
+.piece[data-weight="rest"]:last-child .rank::after { display: none; }
+
+.piece[data-weight="rest"] h2 { font-size: 1.15rem; }
+
+.piece[data-weight="rest"] .summary {
+  margin-bottom: 0;
+  font-size: 0.98rem;
+}
+
+.piece[data-weight="rest"] .read {
+  width: auto;
+  min-width: 9.5rem;
+  min-height: 46px;
+  margin-top: 0;
+  padding: 0.7rem 0.95rem;
+  font-size: 0.95rem;
 }
 
 .piece {
@@ -184,8 +265,9 @@ footer.site,
 
 .summary {
   margin: 0 0 0.85rem;
+  color: #44403c;
   font-size: 1rem;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .read {
@@ -266,5 +348,20 @@ footer.site {
 }
 
 @media (max-width: 800px) {
-  .pieces { grid-template-columns: 1fr; }
+  .pieces,
+  .sequence-next { grid-template-columns: 1fr; }
+
+  .piece[data-weight="lead"] h2 { font-size: 1.6rem; }
+
+  .piece[data-weight="lead"] .read { width: 100%; }
+
+  .piece[data-weight="rest"] {
+    grid-template-columns: 2rem minmax(0, 1fr);
+  }
+
+  .piece[data-weight="rest"] .read {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-top: 0.65rem;
+  }
 }

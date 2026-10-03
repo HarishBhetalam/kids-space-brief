@@ -29,12 +29,6 @@ function formatDay(iso) {
   });
 }
 
-function weightFor(rank, total) {
-  if (rank === 1) return "lead";
-  if (rank <= Math.min(4, total)) return "high";
-  return "rest";
-}
-
 function sortedItems(issue) {
   const items = [];
   for (const section of issue.sections || []) {
@@ -47,23 +41,57 @@ function sortedItems(issue) {
 
 const FILTERS = [["all", "All"], ...CATEGORIES.map(([id, name]) => [id, name.replace(" and ", " & ")])];
 
-function renderPiece(item) {
-  const weight = weightFor(item.rank || 99, 99);
+function renderPiece(item, weight) {
   const href = escapeHtml(item.url);
+  const category = escapeHtml(CATEGORY_NAME[item.category] || item.category);
+  const title = escapeHtml(item.title);
+  const meta = `${escapeHtml(item.source)} · ${escapeHtml(formatDay(item.date))}`;
+  const summary = escapeHtml(item.summary);
+  const rank = escapeHtml(item.rank);
+  const button = `<a class="read" href="${href}">Read the piece</a>`;
+
+  if (weight === "rest") {
+    return `
+      <article class="piece" data-weight="rest">
+        <p class="rank">${rank}</p>
+        <div class="piece-copy">
+          <p class="kicker">${category}</p>
+          <h2><a href="${href}">${title}</a></h2>
+          <p class="meta">${meta}</p>
+          <p class="summary">${summary}</p>
+        </div>
+        ${button}
+      </article>
+    `;
+  }
+
   return `
     <article class="piece" data-weight="${weight}">
-      <p class="kicker"><span class="rank">${escapeHtml(item.rank)}</span>${escapeHtml(CATEGORY_NAME[item.category] || item.category)}</p>
-      <h2><a href="${href}">${escapeHtml(item.title)}</a></h2>
-      <p class="meta">${escapeHtml(item.source)} · ${escapeHtml(formatDay(item.date))}</p>
-      <p class="summary">${escapeHtml(item.summary)}</p>
-      <a class="read" href="${href}">Read the piece</a>
+      <p class="kicker"><span class="rank">${rank}</span>${category}</p>
+      <h2><a href="${href}">${title}</a></h2>
+      <p class="meta">${meta}</p>
+      <p class="summary">${summary}</p>
+      ${button}
     </article>
   `;
 }
 
-function renderPieces(items) {
+function renderPieces(items, sequenced) {
   if (!items.length) return `<p class="empty">No articles this week.</p>`;
-  return `<div class="pieces">${items.map(renderPiece).join("")}</div>`;
+  if (!sequenced) {
+    return `<div class="pieces">${items.map((item) => renderPiece(item, "card")).join("")}</div>`;
+  }
+
+  const lead = items[0];
+  const next = items.slice(1, 3);
+  const rest = items.slice(3);
+  return `
+    <div class="sequence">
+      ${renderPiece(lead, "lead")}
+      ${next.length ? `<div class="sequence-next">${next.map((item) => renderPiece(item, "next")).join("")}</div>` : ""}
+      ${rest.length ? `<div class="sequence-rest">${rest.map((item) => renderPiece(item, "rest")).join("")}</div>` : ""}
+    </div>
+  `;
 }
 
 function renderIssue(issue) {
@@ -80,7 +108,7 @@ function renderIssue(issue) {
       ${issue.intro ? `<p class="issue-intro">${escapeHtml(issue.intro)}</p>` : ""}
     </div>
     <div class="filters" role="group" aria-label="Filter articles">${filters}</div>
-    <div data-issue-body>${renderPieces(items)}</div>
+    <div data-issue-body>${renderPieces(items, true)}</div>
   `;
 }
 
@@ -95,7 +123,7 @@ function bindFilters(root, issue) {
         other.setAttribute("aria-pressed", other === button ? "true" : "false");
       });
       const visible = filter === "all" ? items : items.filter((item) => item.category === filter);
-      body.innerHTML = renderPieces(visible);
+      body.innerHTML = renderPieces(visible, filter === "all");
     });
   });
 }
