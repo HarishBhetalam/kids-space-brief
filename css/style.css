@@ -56,7 +56,8 @@ header.site .wrap {
 
 nav {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
   font-family: ui-sans-serif, system-ui, sans-serif;
   font-size: 0.82rem;
 }
