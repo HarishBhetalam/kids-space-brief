@@ -1,6 +1,137 @@
 {
   "issues": [
     {
+      "id": "2026-10-10",
+      "title": "Week of October 10, 2026",
+      "range": "October 5 – October 10, 2026",
+      "intro": "Common Sense Media said ChatGPT’s teen mode does not do what OpenAI promised on parent alerts, crisis help, or homework. New York City let a virtual reading program through its device ban, Fairplay offered districts a model policy for keeping unproven AI out of class, and TickTalk and Cosmo both launched new kids watches.",
+      "sections": [
+        {
+          "id": "new-tech",
+          "items": [
+            {
+              "rank": 5,
+              "title": "TickTalk 6 goes on sale as a phone alternative",
+              "url": "https://www.prnewswire.com/news-releases/ticktalk-6-new-hardware-smarter-software-same-mission--a-phone-alternative-built-for-kids-302902267.html",
+              "source": "PR Newswire",
+              "date": "2026-10-08",
+              "summary": "TickTalk, in Brea, California, launched the TickTalk 6 for ages 3 to 12 at $169.99, in stock on its site and at Walmart, arriving on Amazon, with Best Buy still ahead. The watch adds voice and video calling, group chat, texting with approved contacts, and a walkie-talkie, along with real-time location, route history, SOS, and 911 calling. From the parent app, families set contacts, block unknown callers, turn on School Mode, and control TickTalk Radio, a music and wellness service built with Feed.fm that can be limited to calm, sleep, and focus audio. The company says there are no games, no social media, and no open internet. The new hardware is a slimmer watch with a 1.6-inch AMOLED screen, IP68 water resistance, and up to 135 hours of standby."
+            },
+            {
+              "rank": 6,
+              "title": "Cosmo opens presale for the thinner JrTrack Pro",
+              "url": "https://www.prnewswire.com/news-releases/cosmo-launches-jrtrack-pro-its-ultra-slim-most-advanced-kids-smartwatch-yet-built-for-the-smartphone-free-childhood-302901135.html",
+              "source": "PR Newswire",
+              "date": "2026-10-07",
+              "summary": "Denver-based Cosmo opened presale for the JrTrack Pro on October 7, a kids smartwatch for ages 6 to 12 priced at $179.99, with holiday shipping planned on CosmoTogether.com and Amazon. The company says the 12-millimeter case holds a 730mAh battery, up to three days of standby, a 5-megapixel camera, an AMOLED screen, and water resistance to 30 meters. Service is a separate membership, the equivalent of $9.99 a month on a prepaid plan or $19.99 month to month, covering cellular talk, text, and data plus GPS. The watch uses School-Fi routines, which Cosmo says trigger from where a child is rather than from a clock schedule, on top of its HaloGPS tracking and SafeCore alerts. Cosmo cites a survey of more than 2,000 parents of school-aged children in which 77 percent said they would prefer a dedicated device that stays connected while limiting distractions."
+            }
+          ]
+        },
+        {
+          "id": "parents-teachers",
+          "items": [
+            {
+              "rank": 11,
+              "title": "A back-to-school night full of questions about the AI policy",
+              "url": "https://www.the74million.org/article/ai-back-to-school-night-anxious-parents-nervous-teachers-and-chill-coaches/",
+              "source": "The 74",
+              "date": "2026-10-09",
+              "summary": "Conor P. Williams describes a middle-school back-to-school night where parents keep asking some version of “What’s your AI policy?” Teachers, he writes, answer with a careful line: they have personal worries, and the school allows AI only in narrow ways. A few parents then ask whether students can still use it in class, to practice, to brainstorm, or to research. Down in the gym, nobody asks the coaches whether a chatbot can run the hill sprints. Williams’s point is that schoolwork, like practice, is there so students learn to stay with something tedious, and that the shortcuts add up even when a chatbot could have found the answer."
+            }
+          ]
+        },
+        {
+          "id": "school",
+          "items": [
+            {
+              "rank": 2,
+              "title": "New York City lets virtual reading tutors through the device ban",
+              "url": "https://www.chalkbeat.org/newyork/2026/10/09/cuny-reading-fellows-school-mamdani-device-ban-exception/",
+              "source": "Chalkbeat",
+              "date": "2026-10-09",
+              "summary": "New York City granted the first exemption to Mayor Zohran Mamdani’s ban on laptops and other individual devices for students in second grade and below, so the CUNY Reading Fellows can keep tutoring by video. About 30 percent of the 1,600 students tutored last school year joined virtually, because tutors cannot always get to schools in the dozens of high-need neighborhoods the program covers. The education department said live instruction from a human teacher can qualify for an exemption, decided case by case, as distinct from platforms where software delivers the lesson. A study that randomly assigned students found no statistically significant difference between virtual and in-person outcomes, though virtual students attended fewer sessions. Parent leader Kaliris Salas-Ramirez, who wants tighter limits on classroom technology, said the city should pay for face-to-face support instead of putting another screen in front of a child."
+            },
+            {
+              "rank": 7,
+              "title": "Robin Hood’s chief says New York has a year to write AI rules",
+              "url": "https://marketbrief.edweek.org/regulation-policy/what-should-ai-guidelines-for-k-12-look-like-new-york-city-has-a-year-to-figure-it-out/2026/10",
+              "source": "EdWeek Market Brief",
+              "date": "2026-10-07",
+              "summary": "EdWeek Market Brief interviewed Richard Buery, chief executive of the Robin Hood Foundation, about what New York City should do when its generative-AI moratorium ends. Mayor Zohran Mamdani’s policy for the 2026–27 year covers about 600,000 students in grades K–8, allows limited high-school use, and turns off AI features in about 40 products the district already uses. Buery, a former deputy mayor, said the city was right to shorten an initial two-year proposal to one year and to leave room for some high-school uses and for students with disabilities. He said a blanket K–8 ban also sidelines tools that do not simply hand students answers, and that students will use AI at home without anyone teaching them to spot a bad answer. He wants a governance model, before the year is up, that asks vendors for evidence, data safeguards, time limits, and checks for racial and gender bias."
+            },
+            {
+              "rank": 9,
+              "title": "Policy fellows ask Congress to fund school AI, not only restrict it",
+              "url": "https://www.the74million.org/article/for-many-schools-implementing-ai-has-become-a-minefield-how-congress-can-help/",
+              "source": "The 74",
+              "date": "2026-10-06",
+              "summary": "Three fellows at the American Innovation Policy Forum argue that students and teachers are already using AI while districts are still writing the rules, and that Congress has left schools without guidance or money. They cite a June 2026 report that more than 4 in 5 teens have used AI tools, and more than two-thirds use them regularly, while districts still vet products with almost no evidence those tools improve learning. A forthcoming paper asks for technical-assistance hubs, regional pilots with safety rules, AI literacy inside ordinary subjects rather than only advanced computer science, a modernized Enhancing Education Through Technology program, and grants for districts willing to redesign instruction. Ji Soo Song, a former U.S. Education Department adviser, Michael Ham, a former middle-school math teacher, and Sabia Prescott say the alternative is a pile of disconnected local experiments. They also write that by 2030 as much as 65 percent of workforce skills are predicted to shift toward human-AI collaboration."
+            }
+          ]
+        },
+        {
+          "id": "workshops",
+          "items": [
+            {
+              "rank": 10,
+              "title": "Camp Invention sets a 2027 curriculum around chemistry and building",
+              "url": "https://www.invent.org/news/education-programs/2027/camp-curriculum",
+              "source": "National Inventors Hall of Fame",
+              "date": "2026-10-09",
+              "summary": "The National Inventors Hall of Fame announced Gear Up, the 2027 curriculum for Camp Invention, its summer program run with the U.S. Patent and Trademark Office. Campers entering kindergarten through sixth grade will do four builds: chemistry and insect anatomy, a market game where they earn rewards and design a product, a gadget project with motors, lights, and gears, and a motorized elevator inside a structure they design. Video messages from Hall of Fame inductees are part of the program, and local educators teach the sessions. The organization says the camps reach 135,000 children a year through 2,600 schools and districts. Districts can sign up to host a 2027 program at invent.org/camp."
+            }
+          ]
+        },
+        {
+          "id": "investments",
+          "items": [
+            {
+              "rank": 4,
+              "title": "Carnegie Learning buys the AI writing tool Ethiqly",
+              "url": "https://www.carnegielearning.com/company/press/carnegie-learning-acquires-ethiqly",
+              "source": "Carnegie Learning",
+              "date": "2026-10-09",
+              "summary": "Pittsburgh-based Carnegie Learning said it has acquired Ethiqly from Owl Ventures and from Ethiqly’s management. Ethiqly is an AI writing platform, developed with IDEO, that supports students from brainstorming and drafting through revision and shows teachers how a student’s thinking is changing. Carnegie will pair it with Lenses on Literature, its grades 6–12 literacy program, and says the tool should help students become better writers rather than write for them. Owl Ventures co-founder Tory Patterson said the firm backed Ethiqly on that same idea and that Carnegie can take it into classrooms at a scale the startup could not. The company says its products already reach more than 5.5 million students and educators in all 50 states and Canada, and the announcement does not disclose a price."
+            }
+          ]
+        },
+        {
+          "id": "research",
+          "items": [
+            {
+              "rank": 1,
+              "title": "ChatGPT for Teens fails the safety tests OpenAI promised",
+              "url": "https://www.commonsensemedia.org/press-releases/chatgpt-for-teens-poses-unacceptable-risk-to-kids-common-sense-media-finds",
+              "source": "Common Sense Media",
+              "date": "2026-10-07",
+              "summary": "Common Sense Media’s Youth AI Safety Institute rated ChatGPT for Teens an unacceptable risk and said OpenAI should limit the product to users 18 and older until the gaps are fixed. Testers ran more than 4,000 prompts on accounts registered to 13- to 17-year-olds, before and after the August 18 teen experience, and had child psychiatrists and a pediatrician review the responses. Parent-linked accounts received no alerts during conversations of up to an hour about suicidal ideation, self-harm, or disordered eating. Alerts appeared only on older accounts with weeks of sensitive history. The chatbot missed more than one in four warranted crisis referrals, study mode still offered a “Show me the answer” pop-up, and adult test accounts never switched to the under-18 experience even when testers said they were 13."
+            }
+          ]
+        },
+        {
+          "id": "rules",
+          "items": [
+            {
+              "rank": 3,
+              "title": "Fairplay’s model policy would keep unproven AI out of class",
+              "url": "https://fairplayforkids.org/student-first-ai-policy-offers-model-for-districts-nationwide-as-evidence-mounts-of-ai-harms/",
+              "source": "Fairplay",
+              "date": "2026-10-07",
+              "summary": "Fairplay and its research partners released the Student-First AI Policy, a model school-board policy that would bar AI products unless they meet tests for privacy, safety, and efficacy. It follows the group’s earlier model moratorium, a proposed five-year pause attached to an open letter signed by more than 250 organizations and experts. A tool would need independent evidence that it improves learning more than existing methods, strong privacy protections without addictive design, and a showing that it will not perpetuate discrimination. Co-authors are Fairplay’s Brendan Bouffard, Shaleen Title of the Parabola Center for Law and Policy, and Joan Donovan of Boston University. Groups consulted include the Massachusetts Teachers Association and the ACLU of Massachusetts, and the text is posted at StudentFirstAIPolicy.com."
+            },
+            {
+              "rank": 8,
+              "title": "Pediatricians tell parents to skip AI toys for now",
+              "url": "https://www.pbs.org/newshour/education/helpful-or-harmful-when-it-comes-to-ai-and-young-kids-experts-have-these-tips-for-parents",
+              "source": "PBS News",
+              "date": "2026-10-05",
+              "summary": "PBS News asked child-development researchers and pediatricians how parents should talk with children younger than 8 about AI they already meet, including Alexa, Siri, and generative video. Jenny Radesky, a developmental pediatrician at the University of Michigan, said young children treat a friendly voice as a person — her own son thought Siri was a woman in California until he was 7 — and advised explaining, in concrete terms, that the machine has never been sad and has no body. The experts said there is not enough evidence that AI toys help. They pointed to Common Sense Media guidance from earlier this year that says to keep the toys away from children 5 and under and to use extreme caution for ages 6 to 12, after testing found that 27 percent of responses were inappropriate. Molly O’Shea, a pediatrician who works with the American Academy of Pediatrics on children and AI, said replacing a conversation with a person with a toy that always answers is likely to limit emotional, social, and language practice."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "2026-10-03",
       "title": "Week of October 3, 2026",
       "range": "September 28 – October 3, 2026",
