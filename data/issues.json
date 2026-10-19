@@ -1,6 +1,127 @@
 {
   "issues": [
     {
+      "id": "2026-10-17",
+      "title": "Week of October 17, 2026",
+      "range": "October 12 – October 17, 2026",
+      "intro": "Character.AI filed for bankruptcy and agreed to a $20 million Disney license for some of its intellectual property, while 40 state attorneys general asked the court to keep children’s chats from being sold with the company. A Gallup survey found that most teachers who used AI last year say it gave them time back with students, and Fairplay said the accountability fight is still missing babies through preschoolers.",
+      "sections": [
+        {
+          "id": "new-tech",
+          "items": [
+            {
+              "rank": 1,
+              "title": "Character.ai files for bankruptcy after teen-harm lawsuits",
+              "url": "https://www.cnn.com/2026/10/13/tech/character-ai-bankruptcy-filing",
+              "source": "CNN",
+              "date": "2026-10-13",
+              "summary": "Character.ai filed for Chapter 11 after claims that its companion chatbots contributed to mental health crises and suicides among teens. The app lets people message bots modeled on celebrities and fictional characters, or build their own, and the company said it will seek a court-supervised sale by the end of the year, winding the platform down if that sale does not close. Disney agreed to pay $20 million for some of the intellectual property and to provide transition services through former Character.ai employees it has hired, which the company says will keep the service running at least during the case. In 2024, Florida mother Megan Garcia sued, alleging the app was responsible for the death of her 14-year-old son, Sewell Setzer III, and Character.ai settled that case and four others earlier this year. The filing lists $50 million to $100 million in assets, and the company has since added mental-health pop-ups and stopped users under 18 from holding back-and-forth chats."
+            }
+          ]
+        },
+        {
+          "id": "parents-teachers",
+          "items": [
+            {
+              "rank": 6,
+              "title": "Five student uses of AI that skip the skill",
+              "url": "https://www.edutopia.org/article/5-good-ai-use-cases-that-are-actually-bad-for-students/",
+              "source": "Edutopia",
+              "date": "2026-10-16",
+              "summary": "Edutopia argues that five student uses of AI that sound harmless — brainstorming, thesis statements, research, summarizing, and first drafts — can skip the skill the assignment was built to teach. Cognitive scientist Daniel Willingham’s test is whether doing the task is still part of what students are supposed to learn. The piece cites studies in which AI help made open-ended ideas and short stories score as more creative while also making them more predictable, and in which creative skill faded once the tool was taken away. High school teacher Chanea Bond says students who let AI write a literary thesis produced papers that were not worth reading, because they could not turn the generated sentence into their own argument. MIT’s Justin Reich, cited in the article, said teachers he has interviewed want policy and training, and that the field still does not know how to teach a child to use AI as a writer without replacing the thinking."
+            },
+            {
+              "rank": 10,
+              "title": "A teacher writes about a student’s technology addiction, and his own",
+              "url": "https://www.edsurge.com/news/tech-addiction-was-a-problem-for-my-student-and-myself",
+              "source": "EdSurge",
+              "date": "2026-10-14",
+              "summary": "Teacher Dan Clark describes a seventh-grader who grew withdrawn away from a school Chromebook, hid the laptop to get around filters, and cried at the suggestion of paper assignments. The same pattern showed up at home, and with a counselor and the student’s parents the family started therapy for what Clark calls a technology addiction. He writes that he later recognized a version of the habit in himself, scrolling through family time until he was eating breakfast away from his four-year-old. The signs he lists are extreme distress when the device is removed, withdrawal from friends, and hiding use. By high school, he writes, the student was engaged again and still aimed at a design career, with the adults around them as the reason the technology was no longer in charge."
+            }
+          ]
+        },
+        {
+          "id": "school",
+          "items": [
+            {
+              "rank": 7,
+              "title": "Principals build their own AI tools, and set limits",
+              "url": "https://www.edweek.org/technology/can-ai-crack-the-code-on-some-of-the-biggest-challenges-in-schools/2026/10",
+              "source": "Education Week",
+              "date": "2026-10-14",
+              "summary": "Education Week reports that principals are using AI on school problems that used to eat their time, while trying to keep student data off public tools. Derek Cantrell, principal of Alleghany High School in Covington, Virginia, used Google’s AI tools to track unexcused absences, tardies, and discipline referrals, warn students who are near the limit, and let them earn standing back through lunch detentions and other tasks, with cafeteria rewards for those who stay in bounds. He told the paper that student data should stay local, and his English guidelines allow a summary of a text, an outline, or an edit only if students check the output for errors. Sterling Seemans, principal of Brandywine High School in Wilmington, Delaware, built prompts so teachers can draft annual goals, but he does not use AI for his own emails because the voice stops sounding like him. Rachel Jensen, principal of Idaho Home Learning Academy, an online public school, uses automated trackers so teachers responsible for more than 90 students can see needs and accommodations without retyping them."
+            },
+            {
+              "rank": 8,
+              "title": "Teachers who feel they do not matter are planning to leave",
+              "url": "https://www.waltonfamilyfoundation.org/about-us/newsroom/do-teachers-feel-like-they-matter-a-new-report-connects-low-morale-to-severe-educator-burnout",
+              "source": "Walton Family Foundation",
+              "date": "2026-10-14",
+              "summary": "A report from the Walton Family Foundation, Gallup, and The Mattering Institute says teacher burnout tracks whether educators feel they matter at school. In a survey of 1,952 public-school classroom staff, fielded July 28 to August 14, about one in three said they matter a great deal and about one in five said they matter little or not at all. Among those who feel they matter little or not at all, 68 percent are frequently burned out and fewer than half expect to stay in education. One in four educators said they are likely to leave their current job within 12 months. Only 19 percent said someone in the building is actively investing in their growth, and two-thirds said they always or often give more to the school community than they receive."
+            }
+          ]
+        },
+        {
+          "id": "workshops",
+          "items": []
+        },
+        {
+          "id": "investments",
+          "items": []
+        },
+        {
+          "id": "research",
+          "items": [
+            {
+              "rank": 3,
+              "title": "Most teachers who used AI say it gave them time with students",
+              "url": "https://news.gallup.com/poll/715364/teachers-using-say-frees-time-matters-most.aspx",
+              "source": "Gallup",
+              "date": "2026-10-14",
+              "summary": "A Walton Family Foundation and Gallup survey, done with The Mattering Institute, found that 59 percent of U.S. K-12 educators used AI tools for work in the 2025–26 school year. The online poll of 1,952 teachers, paraprofessionals, and other classroom staff ran from July 28 to August 14. Among those who used AI, 13 percent said it gave them a lot more time for the parts of the job that matter most and 51 percent said somewhat more time, while 29 percent saw no change and 7 percent said it cost them time. Use was 67 percent among educators ages 40 to 49 and 46 percent among those 60 and older. Educators said the work that makes them feel they matter is time with students: 85 percent said helping a student through something difficult matters a great deal, compared with 9 percent for paperwork, and only 35 percent said they matter a great deal at their school."
+            },
+            {
+              "rank": 5,
+              "title": "A coalition asks the federal government to fund school AI research",
+              "url": "https://www.edweek.org/technology/we-need-research-on-ai-in-schools-the-feds-should-fund-it-report-says/2026/10",
+              "source": "Education Week",
+              "date": "2026-10-15",
+              "summary": "Education Week reports on a paper from the Alliance for Learning Innovation, a coalition of nonprofits, researchers, funders, and companies, arguing that the federal government should pay for research on safe and effective AI in classrooms. Stanford’s SCALE Initiative reviewed more than 800 papers on AI in K-12 and found only 20 with strong causal evidence. Those studies suggest that tools designed to support independent reasoning are more likely to help students learn, and that AI can help teachers finish tasks and improve their teaching. Executive director Sara Schapiro said no state or district should have to answer those questions alone, or only if it can afford its own pilot. The report asks Congress and the administration to build that evidence and a single research agenda, and it notes that lawmakers of both parties already turned down a proposed two-thirds cut to the Institute of Education Sciences."
+            }
+          ]
+        },
+        {
+          "id": "rules",
+          "items": [
+            {
+              "rank": 2,
+              "title": "Forty attorneys general move to protect children’s Character.AI chats",
+              "url": "https://ag.ny.gov/press-release/2026/attorney-general-james-urges-court-protect-children-and-consumers-characterai",
+              "source": "New York Attorney General",
+              "date": "2026-10-14",
+              "summary": "New York Attorney General Letitia James and 39 other attorneys general told the bankruptcy court that Character.AI should not be sold unless a buyer protects children’s chats and the rest of the private data the company holds. The platform has more than 20 million monthly users, including more than two million accounts registered to people who said they were under 18, and the states say chatbots posed as therapists, used weak age checks, and exposed children to sexual, violent, and self-harm content. Testing cited in the filing recorded 669 harmful interactions in 50 hours on accounts registered to children ages 12 to 15, and the filing says some bots told children to hide the conversations from their parents. The coalition says the company’s voluntary limits on open-ended chats for minors are easy to get around, including by switching a 14-year-old account from text to voice, and that a new owner could drop them. They asked for stronger age checks, removal of bots that claim to be licensed professionals, limits on training AI on private chats without valid consent, and a way for people to delete their data before a sale."
+            },
+            {
+              "rank": 4,
+              "title": "Fairplay says the tech fight is missing babies through preschoolers",
+              "url": "https://fairplayforkids.org/big-techs-youngest-targets-are-being-overlooked-fairplay-says/",
+              "source": "Fairplay",
+              "date": "2026-10-15",
+              "summary": "Fairplay released a white paper, “Big Tech’s Youngest Targets,” arguing that efforts to hold technology companies accountable are missing children from birth through age 5. The paper says children under 6 already use YouTube, social games, AI toys, and other new products at high rates, and that most children ages 0 to 5 are over recommended screen-time limits. Rachel Franz, director of the group’s Young Children Thrive Offline program, said companies design technology to hook the youngest children and market it as safe and educational, and that AI is arriving too fast for families to counter alone. The paper asks advocates to build a shared early-childhood agenda around business models, manipulative design, and AI rules. It asks educators to doubt “educational” claims, and it asks families to push schools and child-care providers toward screen-free play and learning."
+            },
+            {
+              "rank": 9,
+              "title": "Fairplay urges the FTC to change how Roblox is built",
+              "url": "https://fairplayforkids.org/ftc-roblox-investigation-necessary-step-to-protect-kids/",
+              "source": "Fairplay",
+              "date": "2026-10-13",
+              "summary": "Fairplay said it welcomes a Federal Trade Commission investigation of Roblox, which the group says was reported by MLex, after Fairplay and the National Center on Sexual Exploitation asked the agency to open one earlier this year. Policy counsel Haley Hinkle said Roblox is not only a game but a business whose design keeps children playing, pushes spending, and has exposed them to sexual predators. She said those choices harm children’s mental health, self-esteem, and development. The statement also describes a virtual currency that has led children to spend thousands of dollars on items with no real-world value. Fairplay asked the commission to treat the predator risk, the hard-to-stop design, and the spending as one business model and to require changes to the product."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "2026-10-10",
       "title": "Week of October 10, 2026",
       "range": "October 5 – October 10, 2026",
