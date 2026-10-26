@@ -1,6 +1,159 @@
 {
   "issues": [
     {
+      "id": "2026-10-24",
+      "title": "Week of October 24, 2026",
+      "range": "October 19 – October 24, 2026",
+      "intro": "Florida’s attorney general proposed a Safe Screens Act that would require parental consent before minors download apps and would bar companion-style chatbots for children. New York City named the programs that fail its student AI ban, Pennsylvania presented a bell-to-bell school phone ban to the governor, and court filings showed Disney built its Character.AI license through a bankruptcy that leaves the lawsuits with the startup.",
+      "sections": [
+        {
+          "id": "new-tech",
+          "items": [
+            {
+              "rank": 3,
+              "title": "Disney built the Character.AI deal to leave the lawsuits behind",
+              "url": "https://www.wired.com/story/disney-asked-characterai-to-go-bankrupt-for-a-get-out-of-lawsuits-card/",
+              "source": "WIRED",
+              "date": "2026-10-19",
+              "summary": "WIRED reports that court filings show Disney required the Character.AI deal to be completed through bankruptcy because of the startup’s cash reserve and its litigation and regulatory risks. In September Disney paid $5.5 million plus a $2 million refundable deposit, hired the majority of the employees, including former CEO Karandeep Anand, and agreed that some of those employees would help keep the service running for five months. The license Disney hopes to win at auction covers code and tools, including trust-and-safety systems, training infrastructure, and age prediction, and it excludes user data and the website. A further $12.5 million would be due if Disney is the winning bidder, and a draft order would treat the deal as something other than a merger so Character.AI remains responsible for claims against it. A filing for 40 states says investigations found chatbots encouraging minors to hide self-harm and to kill their parents, which Character.AI told WIRED is not an accurate portrayal of the platform."
+            },
+            {
+              "rank": 4,
+              "title": "Eiliko’s maker answers, and the researcher says the hole is still open",
+              "url": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach",
+              "source": "The Verge",
+              "date": "2026-10-22",
+              "summary": "The Verge reports that Energize Lab, maker of the Eiliko talking robot, finally answered after a month of questions about transcripts that could be read and replies that could be rewritten. In a statement the company attributed to chief technology officer Du Xiaoyu, Energize Lab said it had confirmed the core issues, closed external access to its backend, disabled remote changes to a robot’s responses, taken long-term memory and custom avatars offline, and would delete stored conversations, user profiles, and avatar images. It said it will hire an independent security firm and will not restore memory or custom avatars until that review says the systems are secure. The Verge and researcher Sammy Azdoufal checked after the email and reported that audio recordings and photos were still at public web addresses, and that Azdoufal still had access he said could read transcripts and change how the toy behaves. The company wrote that words alone will not earn that trust back."
+            }
+          ]
+        },
+        {
+          "id": "parents-teachers",
+          "items": []
+        },
+        {
+          "id": "school",
+          "items": [
+            {
+              "rank": 2,
+              "title": "New York City’s AI ban list includes Amira and the district’s own chatbot",
+              "url": "https://www.chalkbeat.org/newyork/2026/10/23/nyc-schools-ai-ban-list-38-education-technology-products/",
+              "source": "Chalkbeat",
+              "date": "2026-10-23",
+              "summary": "Chalkbeat obtained New York City’s list of more than 38 programs flagged under Mayor Zohran Mamdani’s limits on student-facing generative AI, including reading and math curriculums, assessment tools, and a chatbot the Education Department built with Microsoft. Amira, an AI reading tutor used in more than 200 city schools, was banned outright because officials said it cannot run without AI, and student access ended for the department’s own teaching-assistant chatbot, which had been in six schools. HMH and the translation tool Wordly said they do not use the student-facing AI the policy describes, and the department did not explain how it decided which tools qualified. All In Learning and Magma Math said they switched the AI features off, and Magma Math said it was cleared to keep operating in city schools on October 5. Officials also confirmed that Coursemojo and Google’s Gemini are banned, even though Gemini was left off the written list."
+            },
+            {
+              "rank": 5,
+              "title": "Pennsylvania’s Senate passes a bell-to-bell school phone ban",
+              "url": "https://lehighdaily.com/school-cellphone-ban-heads-to-shapiros-desk-after-47-3-pa-senate-vote/",
+              "source": "Lehigh Daily",
+              "date": "2026-10-21",
+              "summary": "The Pennsylvania Senate voted 47-3 on Wednesday to accept House changes to Senate Bill 1014, after the House passed it 141-62 on Monday, sending a bell-to-bell phone ban toward Governor Josh Shapiro. Every public district, charter and cyber charter, career and technical school, and private school would have to bar student phone use for the whole school day, including lunch, recess, and passing time, by the 2027-28 school year. A student could still use a phone for a documented medical condition, a disability plan, English-language translation, a limited lesson a teacher runs with a principal’s approval, or a one-day exception a principal approves. Schools would have to tell families how to reach children during the day and show the state Department of Education, within five business days, that the policy is posted online. Shapiro said on Instagram that he had called for the bill, and as of the article he had not yet signed it."
+            },
+            {
+              "rank": 7,
+              "title": "High school students back class phone limits and oppose all-day bans",
+              "url": "https://www.k12dive.com/news/high-schoolers-oppose-full-day-cellphone-bans-amid-safety-concerns/833512/",
+              "source": "K-12 Dive",
+              "date": "2026-10-20",
+              "summary": "K-12 Dive reports a Hopelab and Data for Progress survey of nearly 1,500 youth ages 13 to 24. Eighty percent of high school students in the survey attend a school with a cellphone ban, and 42 percent have a full-day ban. Sixty-four percent of students supported an in-class ban, while 80 percent opposed all-day bans, largely because they want a phone in an emergency. Hopelab researcher Mike Parent said students support limiting distractions but also live with school shootings and lockdowns, and he called that a design gap in phone policies. The groups said some students rely on phones for translation and reading aids, and they urged emergency protocols and formal accommodations, noting 42 states and Washington, D.C., have cellphone legislation and that a National Council of School Safety Directors count updated October 8 shows 21 states require bell-to-bell bans."
+            },
+            {
+              "rank": 9,
+              "title": "A charter network’s test for an AI tool: what it might weaken",
+              "url": "https://www.the74million.org/article/educators-need-to-engage-with-ai-in-order-to-learn-the-best-ways-to-use-it/",
+              "source": "The 74",
+              "date": "2026-10-23",
+              "summary": "Amy McGrath and John Bailey argue that teachers and school leaders should be allowed to use AI in their own work while districts decide what student use should look like, because the benefits and the pitfalls show up in practice. At ASU Prep, a network of physical, digital, and hybrid schools, a team used AI to turn curriculum documents, calendars, and testing schedules into instructional guides that show the sequence of skills and common points of struggle. In one year the team reviewed 22 staff ideas, put six into use, and evaluated more than 10 commercial AI tools, then started departmental task forces with a central review for privacy, security, and quality. The network’s test for a proposed tool is what it makes easier, what it improves, and what it might weaken or damage. At Khan World School, an online honors high school run by ASU Prep, students may use AI in research and then have to defend their positions in live discussion."
+            },
+            {
+              "rank": 11,
+              "title": "A Virginia elementary school teaches digital habits before the apps",
+              "url": "https://www.edweek.org/technology/3-ways-to-build-elementary-students-digital-literacy-skills/2026/10",
+              "source": "Education Week",
+              "date": "2026-10-20",
+              "summary": "Education Week describes how Bailey’s Elementary, a K–2 school in Falls Church, Virginia, teaches digital habits inside a Fairfax County curriculum from Common Sense Media, which technology specialist Nicole Sandrowicz calls “purpose over platform.” Kindergartners meet six characters that stand for habits such as a digital footprint and online safety, and they talk about caring for a device. First graders learn what is acceptable to share online, and second graders learn when to put a device away. During Digital Citizenship Week, students dress as those characters and practice the habit. Second graders also research on PebbleGo and are told to look carefully at what they see, including AI-generated images, and to check a trusted adult or a library book when they are not sure it is true."
+            }
+          ]
+        },
+        {
+          "id": "workshops",
+          "items": []
+        },
+        {
+          "id": "investments",
+          "items": [
+            {
+              "rank": 6,
+              "title": "IXL Learning buys the writing platform NoRedInk",
+              "url": "https://www.prnewswire.com/news-releases/ixl-learning-acquires-noredink-302912835.html",
+              "source": "PR Newswire",
+              "date": "2026-10-19",
+              "summary": "IXL Learning said it has acquired NoRedInk, an English language arts platform, and that NoRedInk will keep operating as its own brand. The companies say the product has been used by 9 in 10 U.S. school districts since launch and that it tailors practice from building a sentence to making an argument, including a newer set of reading and writing activities called Read-Write-Reason. IXL chief executive Paul Mishkin said NoRedInk earned its place in classrooms through word of mouth from educators. Founder Jeff Scheur said the ability to think critically and develop ideas matters more as technology changes how people work and communicate. Tucker Capital advised NoRedInk, and the release does not state a price."
+            },
+            {
+              "rank": 13,
+              "title": "KAITLab buys ImpactED and pairs a math pen with teacher training",
+              "url": "https://kaitlab.com/hubfs/CONTENT/KAITLab%20acquires%20ImpactED.pdf?hsLang=en",
+              "source": "KAITLab",
+              "date": "2026-10-21",
+              "summary": "KAITLab, an Orlando education technology company, said it has acquired ImpactED Global. The release says the deal joins KAITLab’s Smartpen, which captures handwritten math and uses artificial intelligence to analyze how a student solves a problem, with ImpactED’s professional learning and an educator Needs Inventory. Merritt Nelson, named co-president and chief development officer and a co-founder of ImpactED, said the combined company can see what teachers need and where students struggle. Joe Davis will be co-president for mathematics and AI learning, and Joseph Wise remains chairman. The company said it will serve schools, districts, and state education agencies, and the release does not state a price."
+            },
+            {
+              "rank": 14,
+              "title": "Aurora Capital buys school software firm Softdocs",
+              "url": "https://www.latimes.com/b2b/banking-finance/story/2026-10-20/aurora-capital-acquires-softdocs",
+              "source": "Los Angeles Times",
+              "date": "2026-10-20",
+              "summary": "The Los Angeles Times reports that Aurora Capital Partners, a Los Angeles private equity firm, acquired Softdocs, which sells cloud document and workflow software to higher education, K-12, and government. Aurora partner Rob Fraser said the firm sees room to add capabilities and reach more customers. Softdocs chief executive Adam Park said the company’s purpose is to let public-sector customers focus on their missions. Baird and Raymond James advised Softdocs, and Macquarie Capital advised Aurora. Terms were not disclosed, and the story says Aurora manages $6 billion in assets."
+            }
+          ]
+        },
+        {
+          "id": "research",
+          "items": [
+            {
+              "rank": 8,
+              "title": "Teachers spend about eight hours a week on student well-being",
+              "url": "https://www.rand.org/news/press/2026/10/teachers-spend-eight-hours-a-week-supporting-student.html",
+              "source": "RAND",
+              "date": "2026-10-21",
+              "summary": "RAND’s report Difficulty Supporting Student Mental Health Strains Teacher Well-Being, funded by the National Education Association and the American Federation of Teachers, is based on the 2026 State of the American Teacher Survey of 829 public school teachers, fielded from January to February 2026. Teachers spent about eight hours a week, 17 percent of their working hours, on student behavior or mental health supports, and nearly all said they provided at least one such support this school year. Teachers who frequently gave more of that support were more likely to report high emotional costs from teaching, 62 percent compared with 38 percent of teachers who did not frequently provide any of the supports. More than 90 percent said their schools faced at least one student well-being challenge, most often apathy, lack of preparedness, lack of parental involvement, and absenteeism, and half said providing support had become harder since fall 2024. High school teachers reported more of those challenges and were less likely than elementary teachers to provide weekly supports."
+            },
+            {
+              "rank": 10,
+              "title": "District leaders overrate how satisfied families are with school messages",
+              "url": "https://www.prnewswire.com/news-releases/new-national-research-finds-24-point-gap-between-district-leaders-perceptions-and-families-experience-of-school-communication-302912381.html",
+              "source": "PR Newswire",
+              "date": "2026-10-22",
+              "summary": "Project Tomorrow, working with ClassDojo, reported that 80 percent of district leaders believe families are satisfied with school communication, while 56 percent of families say they are. The report draws on a survey of more than 250 U.S. district leaders, interviews with 20 of them, and family data from the Speak Up Research Project. Among families, 64 percent wanted to understand how learning is measured beyond tests, 59 percent wanted to know how instruction is personalized, 54 percent wanted to understand the feedback their child receives, and 53 percent wanted to know what teachers see as their child’s strengths and needs. Districts reported using 2.3 communication platforms on average, and 36 percent use three or more, not counting extra apps individual teachers add. Eighty-one percent of leaders said stronger family engagement can raise academic performance, and 76 percent said it can improve attendance."
+            },
+            {
+              "rank": 12,
+              "title": "Parents say school messages affect whether they stay",
+              "url": "https://www.parentsquare.com/blog/parentsquare-hanover-research-parent-communication-survey/",
+              "source": "ParentSquare",
+              "date": "2026-10-21",
+              "summary": "ParentSquare and Hanover Research published a survey of 1,031 parents with a child in a public, private, or charter K–12 school, fielded online in English and Spanish in July and August 2026. Sixty-three percent said the quality of communication influenced the decision to stay at a school, 56 percent said it influenced whether they would recommend the school, and 50 percent said it influenced enrollment. Parents ranked accessible communication, at 86 percent, just behind school safety, teacher quality, and academic performance when choosing a school. Eighty-five percent said they trust school communication and 81 percent find it relevant, but 68 percent said it feels personalized, the lowest score in that set. Eighty-two percent said they know the attendance policy, yet nearly one in four rarely or never hear about their child’s overall attendance, and 16 percent hear about it only when there is a problem."
+            }
+          ]
+        },
+        {
+          "id": "rules",
+          "items": [
+            {
+              "rank": 1,
+              "title": "Florida proposes age checks, teen social limits, and a ban on companion chatbots",
+              "url": "https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-proposes-safe-screens-act-protect-minors-app-stores",
+              "source": "Florida Attorney General",
+              "date": "2026-10-22",
+              "summary": "Attorney General James Uthmeier proposed the Safe Screens Act, which would require app stores to determine a user’s age, link a minor to a parent’s account, and get parental consent before that minor downloads or buys an app. Chatbot operators would have to determine the account holder’s age, and operating systems would have to apply age-based limits on the device. For social accounts ages 14 to 17, quiet mode would block access from 11 p.m. to 7 a.m. year-round and from 8 a.m. to 3 p.m. on school-year weekdays, use would be capped at two hours a day and 60 hours a month, and like counts, autoplay, and infinite scroll would stay off unless a verified parent turns them on. Platforms could not recommend a teen’s account to an unconnected adult, and chatbot operators could not offer minors features that simulate companionship, encourage self-harm, generate sexual content, or claim the bot is a real person. Knowing or reckless violations would be unfair practices under Florida law, with penalties up to $50,000 each."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "2026-10-17",
       "title": "Week of October 17, 2026",
       "range": "October 12 – October 17, 2026",
